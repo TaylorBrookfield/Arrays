@@ -1,0 +1,60 @@
+<script id="candidateCode">
+
+        var getNewTeam = function() {
+            
+           return [
+            personObjectOne = {
+                id: 01,
+                firstName: "Taylor",
+                lastName: "Brookfield",
+                email: "email@outlook.com",
+                gender: "Male",
+                avatar: "(https://tse4.mm.bing.net/th?id=OIP.jxl5CBSRBHd8YNnqvDPHHQHaEK&pid=Api&P=0)"
+            },
+
+            personObjectTwo = {
+                id: 02,
+                firstName:"June",
+                lastName: "Winter",
+                email: "emailtwo@gmail.com",
+                gender: "Female",
+                avatar: "(https://tse2.mm.bing.net/th?id=OIP.GtMjLWXo8Vt7sgWZ3sVkGAHaD5&pid=Api&P=0)"
+            },
+            ];
+        };
+
+        var addPerson = function(anArray) {
+            anArray.push({
+                id: 123,
+                firstName: "Johnny",
+                lastName: "Cooter",
+                email: "test@gmail.com",
+                gender: "Male",
+                avatar: ""
+            });
+            
+        };
+
+        var removePerson = function(indexOfPerson, anArray) {
+            let removePerson = anArray[indexOfPerson];
+            anArray.splice(indexOfPerson, 1);
+            return removePerson;
+        };
+
+        var logNames = function(anArray) {
+            for (let i = 0; i < anArray.length; i++)
+            console.log(anArray[i].firstName);
+        };
+
+
+        var findSabio = function(people) {
+            var sabioPeoples = [];
+            for (let i = 0; i < people.length; i++) {
+                if (people[i].lastName === "Sabio") {
+                    sabioPeoples.push(people[i]);
+                }
+            }
+            return sabioPeoples;
+        };  
+
+    </script>
